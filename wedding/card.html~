@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="script/snowstorm.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/jquery.cycle/jquery.cycle.lite.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Prajwala WEDS Satya</title>
+
+<style>
+
+body {margin:0; padding:0; background:#280000;}
+#main {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  margin: auto;
+  background-color:#280000;
+  color: white;
+}
+
+#ganapathi {height:40px; width:auto; background: #280000 url(ganapathi.jpg) no-repeat top center;  width:100%;}
+#thoranam {height:20px; width:auto; background: #280000 url(thoranam.jpg)  top center;  width:100%;}
+#content {width:769px; height:256px; background:#074000 url(content.jpg) no-repeat center; margin:0 auto; width:100%;}
+
+#slideshow {width: 351px; height: 255px; overflow: hidden; margin: 0 auto; position: relative;}
+
+#muggu {height:20px; width:auto; background: #280000 url(muggu.jpg) center;  width:100%;}
+
+/*#details {width:351px; height:255px; margin:0 auto; background:#074000 url(we.jpg) no-repeat center;}*/
+#details {width:351px; height:255px; margin:0 auto;}
+#empty {width:351px; height:255px; margin:0 auto; background:#074000;}
+#muhurtham {width:351px; height:255px; margin:0 auto; background:#074000 url(muhurtham.jpg) no-repeat center;}
+#venue {width:351px; height:255px; margin:0 auto; background:#074000 url(venue.jpg) no-repeat center;}
+
+
+
+</style>
+
+<script type="text/javascript">
+
+function playeffect() {
+    $('#slideshow').fadeIn(3000);
+    $('#slideshow').cycle({
+		fx: 'fade',
+		timeout: 8000,
+		delay: 4000,
+		speed: 3000
+    });
+}
+
+$(document).ready(function(){ 
+    snowStorm = new SnowStorm();
+});
+
+</script>
+
+</head>
+
+<body>
+<div id="main">
+	<div id="ganapathi"></div>
+	<div id="thoranam"></div>
+	<div id="content">
+ 	     <div id="slideshow" style="display:none;">
+
+		<div id="details">
+		  <img src="we.jpg" onload="playeffect()" />
+		</div>
+		<div id="muhurtham">
+
+		
+		</div>
+		<div id="venue">
+		
+
+		</div>
+	    </div>
+	</div>
+	<div id="muggu"></div>
+	</div>
+	
+	<embed src="bgm.mp3" autostart="true" loop="true" hidden="true">
+</body>
+</html>
